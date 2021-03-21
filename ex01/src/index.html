@@ -6,22 +6,100 @@
     <title>Untitled Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/ex01/styles/index.css">
+    <script src="/ex01/scripts/index.js"></script>
 </head>
 
-    <body>
-        <h2>Modal Example</h2>
-
-        <!-- Trigger/Open The Modal -->
-        <button id="myBtn">Open Modal</button>
-        
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            </iframe>
+<body>
+  <div class="row">
+      <div class="col">
+          <div class="content">
+              <img src="/ex01/images/img1.jpg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" />
           </div>
-        </div> 
-    </body>
-    <script src="/ex01/scripts/index.js"></script>
+      </div>
+      <div class="col">
+          <div class="content">
+              <img src="/ex01/images/img2.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" />
+          </div>
+      </div>
+      <div class="col">
+          <div class="content">
+              <img src="/ex01/images/img3.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" />
+          </div>
+      </div>
+      <div class="col">
+          <div class="content">
+              <img src="/ex01/images/img4.jpg" onclick="openLightbox();toSlide(4)" class="hover-shadow preview" />
+          </div>
+      </div>
+      <div class="col">
+          <div class="content">
+              <img src="/ex01/images/img5.jpg" onclick="openLightbox();toSlide(5)" class="hover-shadow preview" />
+          </div>
+      </div>
+      <div class="col">
+          <div class="content">
+              <img src="/ex01/images/img6.jpg" onclick="openLightbox();toSlide(6)" class="hover-shadow preview" />
+          </div>
+      </div>
+      <div class="col">
+          <div class="content">
+              <img src="/ex01/images/img7.jpg" onclick="openLightbox();toSlide(7)" class="hover-shadow preview" />
+          </div>
+      </div>
+      <div class="col">
+          <div class="content">
+              <img src="/ex01/images/img8.jpg" onclick="openLightbox();toSlide(8)" class="hover-shadow preview" />
+          </div>
+      </div>
+      <div class="col">
+          <div class="content">
+              <img src="/ex01/images/img9.jpg" onclick="openLightbox();toSlide(9)" class="hover-shadow preview" />
+          </div>
+      </div>
+      <div class="col">
+          <div class="content">
+              <img src="/ex01/images/img10.jpg" onclick="openLightbox();toSlide(10)" class="hover-shadow preview" />
+          </div>
+      </div>
+  </div>
+  <div id="Lightbox" class="modal">
+      <span class="close pointer" onclick="closeLightbox()">&times;</span>
+      <div class="modal-content">
+          <div class="slide">
+              <img src="/ex01/images/img1.jpg" class="image-slide" />
+          </div>
+          <div class="slide">
+              <img src="/ex01/images/img2.jpg" class="image-slide" />
+          </div>
+          <div class="slide">
+              <img src="/ex01/images/img3.jpg" class="image-slide" />
+          </div>
+          <div class="slide">
+              <img src="/ex01/images/img4.jpg" class="image-slide" />
+          </div>
+          <div class="slide">
+              <img src="/ex01/images/img5.jpg" class="image-slide" />
+          </div>
+          <div class="slide">
+              <img src="/ex01/images/img6.jpg" class="image-slide" />
+          </div>
+          <div class="slide">
+              <img src="/ex01/images/img7.jpg" class="image-slide" />
+          </div>
+          <div class="slide">
+              <img src="/ex01/images/img8.jpg" class="image-slide" />
+          </div>
+          <div class="slide">
+              <img src="/ex01/images/img9.jpg" class="image-slide" />
+          </div>
+          <div class="slide">
+              <img src="/ex01/images/img10.jpg" class="image-slide" />
+          </div>
+          <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </div>
+  </div>
+</body>
+</body>
+    
     </html>
